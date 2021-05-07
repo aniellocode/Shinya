@@ -1,7 +1,7 @@
 console.log('sono pronto a tickettare')
 const Discord = require('discord.js');
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODM5MTc1MTA0MDM0MzczNjUz.YJF0tw.eQKZlJuay5E2BC3JKOodmSY7W-4')
+client.login(process.env.token)
 
 client.on("message", message => {
     if (message.content == "!ciao") {
